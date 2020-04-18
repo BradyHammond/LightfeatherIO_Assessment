@@ -36,7 +36,7 @@ class Encoder:
 
     def save(self):
         file_name = str(uuid.uuid1()).replace('-', '') + '.txt'
-        save_directory = '../saves'
+        save_directory = os.path.join(os.getcwd(), "saves")
 
         if not os.path.exists(save_directory):
             try:

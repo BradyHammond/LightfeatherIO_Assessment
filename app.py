@@ -34,13 +34,13 @@ def encode():
     if not request.json:
         abort(make_response(jsonify({'status': '500', 'message': 'Invalid JSON request'}), 500))
     if 'Shift' not in request.json:
-        abort(make_response(jsonify({'status': '500', 'message': 'Request missing key: \"Shift\"'}), 500))
+        abort(make_response(jsonify({'status': '500', 'message': 'Request missing key: Shift'}), 500))
     if 'Message' not in request.json:
-        abort(make_response(jsonify({'status': '500', 'message': 'Request missing key: \"Message\"'}), 500))
+        abort(make_response(jsonify({'status': '500', 'message': 'Request missing key: Message'}), 500))
     if type(request.json['Shift']) != int:
-        abort(make_response(jsonify({'status': '500', 'message': 'Invalid \"Shift\" value'}), 500))
+        abort(make_response(jsonify({'status': '500', 'message': 'Invalid Shift value'}), 500))
     if type(request.json['Message']) != str:
-        abort(make_response(jsonify({'status': '500', 'message': 'Invalid \"Message\" value'}), 500))
+        abort(make_response(jsonify({'status': '500', 'message': 'Invalid Message value'}), 500))
     encoder = Encoder(request.json['Shift'], request.json['Message'])
     encoder.encode()
     encoder.save()
@@ -52,7 +52,7 @@ def encode():
 
 
 if __name__ == "__main__":
-    app.run(port=23456)
+    app.run(debug=True, port=23456)
 
 # ================================================== #
 #                        EOF                         #
