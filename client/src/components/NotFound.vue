@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// Export 404 component
 export default {
   name: 'NotFound',
   data () {

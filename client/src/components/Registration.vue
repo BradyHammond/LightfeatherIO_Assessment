@@ -47,6 +47,7 @@
 </template>
 
 <script>
+//Export Registration component
 export default {
   name: 'Registration',
   data: () => ({

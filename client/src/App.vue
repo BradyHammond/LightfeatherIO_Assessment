@@ -17,6 +17,7 @@
 </template>
 
 <script>
+// Export App component
 export default {
   name: 'App'
 }
