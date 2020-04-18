@@ -25,7 +25,6 @@ export default {
 <style>
 #app {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #19232D;
@@ -34,12 +33,6 @@ export default {
 }
 
 .circles{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 .circles li{
@@ -59,7 +52,6 @@ export default {
   height: 80px;
   animation-delay: 0s;
 }
-
 
 .circles li:nth-child(2) {
   left: 10%;

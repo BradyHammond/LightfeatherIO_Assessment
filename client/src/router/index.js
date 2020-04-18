@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Registration from '@/components/Registration'
 
 const routerOptions = [
   { path: '/', component: 'Registration' },

@@ -126,3 +126,4 @@ env.bak/
 venv.bak/
 pip-selfcheck.json
 __pycache__
+saves
