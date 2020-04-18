@@ -20,7 +20,7 @@
                       <v-text-field v-model="username" :rules="usernameRules" label="Username" placeholder="Username" solo required></v-text-field>
                       <v-text-field v-model="email" :rules="emailRules" label="Email" placeholder="Email" ref="email" solo required></v-text-field>
                       <v-text-field v-model="password" :rules="[() => !!password || 'Please enter a password']" :type="show ? 'text' : 'password'" label="Password" placeholder="Password" :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'" @click:append="show = !show" solo required></v-text-field>
-                      <v-text-field v-model="confirmPassword" :rules="[() => password === confirmPassword || 'Passwords do not match']" :type="showAlt ? 'text' : 'password'" label="Confirm Password" placeholder="Confirm Password" :append-icon="showAlt ? 'mdi-eye' : 'mdi-eye-off'" @click:append="showAlt = !showAlt" solo required></v-text-field>
+                      <v-text-field v-model="confirmPassword" :rules="[() => !!confirmPassword && password === confirmPassword || 'Passwords do not match']" :type="showAlt ? 'text' : 'password'" label="Confirm Password" placeholder="Confirm Password" :append-icon="showAlt ? 'mdi-eye' : 'mdi-eye-off'" @click:append="showAlt = !showAlt" solo required></v-text-field>
                       <v-btn x-large :disabled="!valid" class="mb-4" id="submit-button" @click.stop="dialog=true">Submit</v-btn>
                     </v-form>
                     <v-dialog v-model="dialog" max-width="290">

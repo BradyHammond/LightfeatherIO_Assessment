@@ -79,4 +79,4 @@ This project uses the Python framework Flask on the backend and the JavaScript f
 stack was chosen to keep the project lightweight while allowing for future extensibility. I have used both Python
 and JavaScript in the past, but this was my first exposure to vue.js and Flask. In addition to the lightweight benefits
 these options provided, I chose these frameworks to highlight my ability to quickly learn and utilize new technologies.
-Again, if you have any further questions about my reasoning for this project, please reach out to me directly.
+If you have any further questions about my reasonings, please reach out to me directly.
